@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J5T-JD-3OZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="oAe-BV-PaN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HRd-zj-m38">
+                                <rect key="frame" x="21" y="28" width="338" height="252"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="2Cr-c5-0mm"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sWK-w5-kVH">
+                                <rect key="frame" x="21" y="339" width="338" height="252"/>
+                                <color key="backgroundColor" red="0.62259155607463312" green="1" blue="0.53183436042972798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="252" id="1qc-g5-Iz8"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92485225199999999" green="0.48881333389999998" blue="0.25542397259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sWK-w5-kVH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="21" id="2Jo-NZ-3m3"/>
+                            <constraint firstAttribute="trailing" secondItem="sWK-w5-kVH" secondAttribute="trailing" constant="16" id="77N-1T-W7n"/>
+                            <constraint firstItem="sWK-w5-kVH" firstAttribute="top" secondItem="HRd-zj-m38" secondAttribute="bottom" constant="59" id="KxM-4T-OeZ"/>
+                            <constraint firstAttribute="trailing" secondItem="HRd-zj-m38" secondAttribute="trailing" constant="16" id="QaW-JX-kP5"/>
+                            <constraint firstItem="HRd-zj-m38" firstAttribute="top" secondItem="J5T-JD-3OZ" secondAttribute="bottom" constant="8" id="cQ7-a1-hPy"/>
+                            <constraint firstItem="HRd-zj-m38" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="21" id="kY5-AP-u0Y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="XZImgView" destination="HRd-zj-m38" id="Fed-GQ-d0b"/>
+                        <outlet property="XZOldImageView" destination="sWK-w5-kVH" id="BUc-bc-sAP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+</document>
